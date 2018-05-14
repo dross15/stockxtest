@@ -1,0 +1,1 @@
+This application was built with React for StockX by Dan Ross.
