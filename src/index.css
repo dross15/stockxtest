@@ -43,6 +43,7 @@ body {
   height: 90%;
   width: 100%;
   overflow: auto;
+  cursor: pointer;
 }
 
 form {
@@ -51,4 +52,15 @@ form {
   height: 90%;
   width: 100%;
   overflow: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.empty {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
 }

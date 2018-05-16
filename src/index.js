@@ -100,7 +100,7 @@ class Shoe extends React.Component {
     let displayEmpty, displayButtons, displayForm, displayFields;
     /* if showEmpty is true, displays an empty cell and prompts user with options upon click on cell*/
     if (this.state.showEmpty === true) {
-      displayEmpty = <div onClick={() => this.handleClick()}><p>{this.state.value}</p></div>
+      displayEmpty = <div className="empty" onClick={() => this.handleClick()}><p>{this.state.value}</p></div>
     }
     /* if buttonsHidden is false, it shows the user the option buttons, add, edit, delete */
     if(this.state.buttonsHidden === false) {
@@ -108,7 +108,7 @@ class Shoe extends React.Component {
     }
     /* if showForm is true, it shows the user the form to fill out the sneaker information */
     if(this.state.showForm === true) {
-      displayForm = <form><label>Brand:<input name ="brand" value={this.state.brand} type="text" onChange={this.handleInputChange} /></label><br /><label>Style:<input name ="style" value={this.state.style} type="text" onChange={this.handleInputChange} /></label><br /><label>Size:<input name ="size" value={this.state.size} type="text" onChange={this.handleInputChange} /></label><br /><label>UPC ID:<input name ="upcid" value={this.state.upcid} type="text" onChange={this.handleInputChange} /></label><br /><input type="button" value="Submit" onClick={() => this.handleSubmit()}/></form>
+      displayForm = <form><label>Brand:<input name ="brand" value={this.state.brand} type="text" onChange={this.handleInputChange} /></label><br /><label>Style:<input name ="style" value={this.state.style} type="text" onChange={this.handleInputChange} /></label><br /><label>Size:<input name ="size" value={this.state.size} type="text" onChange={this.handleInputChange} /></label><br /><label>UPC ID:<input name ="upcid" value={this.state.upcid} type="text" onChange={this.handleInputChange} /></label><br /><button type="button" onClick={() => this.handleSubmit()}>Submit</button></form>
     }
     /* if showFields is true, it shows the user the information for the sneaker in the cell */
     if(this.state.showFields === true) {
